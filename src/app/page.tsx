@@ -14,10 +14,10 @@ export default function Home() {
       <Page page>
         {/* page 1*/}
         <div className="flex flex-col items-center justify-center bg-background h-full border-b-4 border-primary">
-          <div className="w-[800px] -mb-8">
+          <div className="min-w-[200px] w-full max-w-[800px] sm:-mb-8 -mb-4 px-8">
             <Logo />
           </div>
-          <h1 className="text-4xl text-primary">Styleguide</h1>
+          <h1 className="text-2xl sm:text-4xl text-primary">Styleguide</h1>
         </div>
       </Page>
       <div className="z-0">
@@ -82,8 +82,10 @@ export default function Home() {
             />
           </div>
           <h2 className="text-6xl text-primary pt-10">03. Logo</h2>
-          <p>We designed the logo to clearly convey the ideas and features of the application. We use a stylized map pin to convey the
-          the map and location features. We use the depiction of a person in a wheelchair
+          <p>
+            We designed the logo to clearly convey the ideas and features of the
+            application. We use a stylized map pin to convey the the map and
+            location features. We use the depiction of a person in a wheelchair
           </p>
           <div className="w-full flex flex-row items-center justify-center">
             <div className="min-w-[180px] w-full max-w-[180px] ">
@@ -110,25 +112,26 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row justify-center gap-6">
-          <div className="h-fit bg-card flex flex-col items-center w-fit p-3 rounded">
+            <div className="h-fit bg-card flex flex-col items-center w-fit p-3 rounded">
               <img className="h-[500px]" src="./inspo.png" />
             </div>
           </div>
-            <div className="flex flex-row justify-center gap-6">
+          <div className="flex flex-row justify-center gap-6">
             <Search />
-            <p className='text-2xl my-4'>
-            This will be used as part of our search feature. 
-              </p>
+            <p className="text-2xl my-4">
+              This will be used as part of our search feature.
+            </p>
             <Profile />
-            <p className='text-2xl my-4'>
-              This represents our profile page. It has a generic visual to be inclusive towards all individuals
-              </p>
+            <p className="text-2xl my-4">
+              This represents our profile page. It has a generic visual to be
+              inclusive towards all individuals
+            </p>
             <Settings />
-            <p className='text-2xl my-4'>
-              This will be used to distinguish the settings feature. 
-              </p>
-            </div>
-          
+            <p className="text-2xl my-4">
+              This will be used to distinguish the settings feature.
+            </p>
+          </div>
+
           <div className="flex flex-col gap-4">
             <h2 className="text-6xl text-primary pt-10">05. Typography</h2>
             <p className="text-2xl my-4">
