@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Logo } from "./components/Logo";
+import { LogoGuide } from "./components/LogoGuide";
+import { LogoIcon } from "./components/LogoIcon";
 import { Search } from "./components/Search";
 import { Profile } from "./components/Profile";
 import { Settings } from "./components/Settings";
@@ -76,10 +78,10 @@ export default function Home() {
 			<Page page>
 				{/* page 1*/}
 				<div className="flex flex-col items-center justify-center bg-background h-full border-b-4 border-primary">
-					<div className="w-[600px] -mb-8">
+					<div className="min-w-[200px] w-full max-w-[800px] sm:-mb-8 -mb-4 px-8">
 						<Logo />
 					</div>
-					<h1 className="text-4xl text-primary">Styleguide</h1>
+					<h1 className="text-2xl sm:text-4xl text-primary">Styleguide</h1>
 				</div>
 			</Page>
 			<div className="z-0">
@@ -144,19 +146,24 @@ export default function Home() {
 						/>
 					</div>
 					<h2 className="text-6xl text-primary pt-10">03. Logo</h2>
+					<p>
+						We designed the logo to clearly convey the ideas and features of the
+						application. We use a stylized map pin to convey the the map and
+						location features. We use the depiction of a person in a wheelchair
+					</p>
 					<div className="w-full flex flex-row items-center justify-center">
-						<div className="min-w-[200px] w-full max-w-[700px]">
+						<div className="min-w-[180px] w-full max-w-[180px] ">
+							<LogoIcon />
+						</div>
+					</div>
+					<div className="w-full flex flex-row items-center justify-center">
+						<div className="min-w-[200px] w-full max-w-[700px] ">
 							<Logo />
 						</div>
 					</div>
 					<div className="w-full flex flex-row items-center justify-center">
 						<div className="min-w-[200px] w-full max-w-[700px]">
-							<Logo />
-						</div>
-					</div>
-					<div className="w-full flex flex-row items-center justify-center">
-						<div className="min-w-[200px] w-full max-w-[700px]">
-							<Logo />
+							<LogoGuide />
 						</div>
 					</div>
 					<h2 className="text-6xl text-primary pt-10">04. Graphics & Icons</h2>
@@ -207,12 +214,7 @@ export default function Home() {
 						<h5 className="text-2xl font-semibold">Noto Sans - H5 - 1.5rem</h5>
 						<h6 className="text-xl font-semibold">Noto Sans - H6 - 1.25rem</h6>
 					</div>
-					<h2 className="text-6xl text-primary pt-10 m-auto">Team</h2>
-					<ul className="text-4xl flex flex-col gap-2 items-center">
-						<li>Allison</li>
-						<li>Christine</li>
-						<li>Vitor</li>
-					</ul>
+					<div className="h-20 w-full" />
 					<h2 className="text-6xl text-primary pt-10">05. Accessibility</h2>
 					<div className="flex flex-col gap-4">
 						<h3 className="text-2xl text-primary">Color Contrast Ratios</h3>
@@ -294,6 +296,12 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+					<h2 className="text-6xl text-primary pt-10 m-auto">Team</h2>
+					<ul className="text-4xl flex flex-col gap-2 items-center">
+						<li>Allison</li>
+						<li>Christine</li>
+						<li>Vitor</li>
+					</ul>
 					<div className="h-20 w-full" />
 				</div>
 			</Page>
