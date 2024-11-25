@@ -1,6 +1,3 @@
-/*font-[family-name:var(--font-geist-mono)]
- * */
-
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -96,6 +93,38 @@ export default function Home() {
             </div>
           </div>
           <h2 className="text-6xl text-primary pt-10">04. Graphics</h2>
+          <div className="flex flex-row justify-center gap-6">
+            <div className="h-fit bg-card flex flex-col items-center w-fit p-3 rounded">
+              <img className="h-[500px]" src="./home.png" />
+            </div>
+            <div className="h-fit bg-card flex flex-col items-center w-fit p-3 rounded">
+              <img className="h-[500px]" src="./quiz.png" />
+            </div>
+          </div>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-6xl text-primary pt-10">05. Typography</h2>
+            <p className="text-2xl my-4">
+              We chose Noto Sans as our primary font. Being an unmodulated sans
+              font, Noto Sans affords a consistent stroke width that gives it
+              great readability in various contexts. Picking a highly accessible
+              font is critical to us considering our mission, and Noto sans fit
+              that criteria.
+            </p>
+            <h1 className="text-6xl font-semibold">Noto Sans - H1 - 3.75rem</h1>
+            <h2 className="text-5xl font-semibold">Noto Sans - H2 - 3rem</h2>
+            <h3 className="text-4xl font-semibold">Noto Sans - H3 - 2.25rem</h3>
+            <h4 className="text-3xl font-semibold">
+              Noto Sans - H4 - 1.875rem
+            </h4>
+            <h5 className="text-2xl font-semibold">Noto Sans - H5 - 1.5rem</h5>
+            <h6 className="text-xl font-semibold">Noto Sans - H6 - 1.25rem</h6>
+          </div>
+          <h2 className="text-6xl text-primary pt-10 m-auto">Team</h2>
+          <ul className="text-4xl flex flex-col gap-2 items-center">
+            <li>Allison</li>
+            <li>Christine</li>
+            <li>Vitor</li>
+          </ul>
           <div className="h-20 w-full" />
         </div>
       </Page>
