@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export function Logo() {
   return (
     <svg viewBox="0 0 990 223" fill="none" xmlns="http://www.w3.org/2000/svg">
