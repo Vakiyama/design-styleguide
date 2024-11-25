@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import { Logo } from './components/Logo';
+import { Search } from './components/Search';
+import { Profile } from './components/Profile';
+import { Settings } from './components/Settings';
 
 export default function Home() {
   return (
@@ -92,7 +95,7 @@ export default function Home() {
               <Logo />
             </div>
           </div>
-          <h2 className="text-6xl text-primary pt-10">04. Graphics</h2>
+          <h2 className="text-6xl text-primary pt-10">04. Graphics & Icons</h2>
           <div className="flex flex-row justify-center gap-6">
             <div className="h-fit bg-card flex flex-col items-center w-fit p-3 rounded">
               <img className="h-[500px]" src="./home.png" />
@@ -101,6 +104,26 @@ export default function Home() {
               <img className="h-[500px]" src="./quiz.png" />
             </div>
           </div>
+          <div className="flex flex-row justify-center gap-6">
+          <div className="h-fit bg-card flex flex-col items-center w-fit p-3 rounded">
+              <img className="h-[500px]" src="./inspo.png" />
+            </div>
+          </div>
+            <div className="flex flex-row justify-center gap-6">
+            <Search />
+            <p className='text-2xl my-4'>
+            This will be used as part of our search feature. 
+              </p>
+            <Profile />
+            <p className='text-2xl my-4'>
+              This represents our profile page. It has a generic visual to be inclusive towards all individuals
+              </p>
+            <Settings />
+            <p className='text-2xl my-4'>
+              This will be used to distinguish the settings feature. 
+              </p>
+            </div>
+          
           <div className="flex flex-col gap-4">
             <h2 className="text-6xl text-primary pt-10">05. Typography</h2>
             <p className="text-2xl my-4">
